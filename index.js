@@ -27,7 +27,9 @@ router(app)
 const NAME_DB = process.env.NAME
 const PASSWORD_DB = process.env.PASSWORD
 
-mongoose.connect(`mongodb+srv://${NAME_DB}:${PASSWORD_DB}@cluster0.8kxllok.mongodb.net/full_stack`)
+
+// mongodb+srv://${NAME_DB}:${PASSWORD_DB}@cluster0.8kxllok.mongodb.net/full_stack
+mongoose.connect(`mongodb+srv://minhquy0898240032:duongminhquy10c3@cluster0.8kxllok.mongodb.net/full_stack`)
     .then(() => {
         console.log("Connect DB success")
     })
